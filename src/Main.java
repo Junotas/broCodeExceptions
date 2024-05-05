@@ -1,5 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+//exception = an event that disrupts the programs flow of instructions
+
+
+
+
+
     }
 }
