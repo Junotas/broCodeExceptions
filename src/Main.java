@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -19,6 +20,10 @@ try {
 }
     catch (ArithmeticException e) {
     System.out.println("You can't divide by zero idiot");
+
+}
+catch (InputMismatchException e) {
+    System.out.println("PLEASE ENTER A NUMBER OMFG YOU IDIOT");
 
 }
     }
