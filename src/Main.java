@@ -24,7 +24,9 @@ try {
 }
 catch (InputMismatchException e) {
     System.out.println("PLEASE ENTER A NUMBER OMFG YOU IDIOT");
-
+}
+catch (Exception e) {
+    System.out.println("Something went wrong :(");
 }
     }
 }
