@@ -3,10 +3,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
 //exception = an event that disrupts the programs flow of instructions
 try {
-    Scanner scanner = new Scanner(System.in);
 
     System.out.println("Enter whole number to divide: ");
     int x = scanner.nextInt();
@@ -16,7 +16,7 @@ try {
 
     int z = x / y;
 
-    System.out.println("result" + z);
+    System.out.println("result " + z);
 }
     catch (ArithmeticException e) {
     System.out.println("You can't divide by zero idiot");
@@ -28,5 +28,11 @@ catch (InputMismatchException e) {
 catch (Exception e) {
     System.out.println("Something went wrong :(");
 }
+finally {
+    System.out.println("This will always prints (ignore this)");
+    scanner.close();
+
+}
+
     }
 }
